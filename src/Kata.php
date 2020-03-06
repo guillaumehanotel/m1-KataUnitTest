@@ -8,4 +8,8 @@ class Kata {
         $output .= $x % 5 == 0 ? 'Buzz' : '';
         return $output;
     }
+
+    public function isLeapYear(int $year): bool {
+
+    }
 }

@@ -1,9 +1,8 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-
-require './vendor/autoload.php';
-require './src/Kata.php';
+require_once './vendor/autoload.php';
+require_once './src/Kata.php';
 
 class FizzBuzzTest extends TestCase {
 
