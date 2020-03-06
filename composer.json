@@ -1,0 +1,13 @@
+{
+    "name": "guillaumeh/kata-unit-test",
+    "authors": [
+        {
+            "name": "Guillaume HANOTEL",
+            "email": "guillaumehanotel@orange.fr"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
