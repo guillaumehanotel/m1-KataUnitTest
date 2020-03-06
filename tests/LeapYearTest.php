@@ -31,5 +31,11 @@ class LeapYearTest extends TestCase {
         $this->assertEquals($expectedOutput, self::$kata->isLeapYear($input));
     }
 
+    public function testIsNotDivisibleBy4() {
+        $input = 2017;
+        $expectedOutput = false;
+        $this->assertEquals($expectedOutput, self::$kata->isLeapYear($input));
+    }
+
 
 }
