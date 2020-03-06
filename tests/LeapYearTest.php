@@ -19,5 +19,11 @@ class LeapYearTest extends TestCase {
         $this->assertEquals($expectOutput, self::$kata->isLeapYear($input));
     }
 
+    public function testIsDivisibleBy100AndNotBy400() {
+        $input = 1800;
+        $expectedOutput = false;
+        $this->assertEquals($expectedOutput, self::$kata->isLeapYear($input));
+    }
+
 
 }
