@@ -7,6 +7,9 @@ class Kata {
         if($x % 3 == 0) {
             $output .= 'Fizz';
         }
+        if($x % 5 == 0) {
+            $output .= 'Buzz';
+        }
         return $output;
     }
 }
