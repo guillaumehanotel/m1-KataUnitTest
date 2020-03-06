@@ -3,10 +3,10 @@
 class Kata {
 
     public function fizzBuzz(int $x): string {
-        if($x % 3 != 0 && $x % 5 != 0) {
-            return '';
-        } else if($x % 3 == 0) {
-            return 'Fizz';
+        $output = '';
+        if($x % 3 == 0) {
+            $output .= 'Fizz';
         }
+        return $output;
     }
 }
