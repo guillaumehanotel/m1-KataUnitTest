@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 require './vendor/autoload.php';
 require './src/Kata.php';
 
-class KataTest extends TestCase {
+class FizzBuzzTest extends TestCase {
 
     private static $kata;
 
@@ -29,6 +29,12 @@ class KataTest extends TestCase {
     public function testShouldReturnBuzz() {
         $input = 5;
         $expectedResult = 'Buzz';
+        $this->assertEquals($expectedResult, self::$kata->fizzBuzz($input));
+    }
+
+    public function testShouldReturnFizzBuzz() {
+        $input = 15;
+        $expectedResult = 'FizzBuzz';
         $this->assertEquals($expectedResult, self::$kata->fizzBuzz($input));
     }
 
