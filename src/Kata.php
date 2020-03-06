@@ -4,12 +4,8 @@ class Kata {
 
     public function fizzBuzz(int $x): string {
         $output = '';
-        if($x % 3 == 0) {
-            $output .= 'Fizz';
-        }
-        if($x % 5 == 0) {
-            $output .= 'Buzz';
-        }
+        $output .= $x % 3 == 0 ? 'Fizz' : '';
+        $output .= $x % 5 == 0 ? 'Buzz' : '';
         return $output;
     }
 }
