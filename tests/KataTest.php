@@ -26,4 +26,10 @@ class KataTest extends TestCase {
         $this->assertEquals($expectedResult, self::$kata->fizzBuzz($input));
     }
 
+    public function testShouldReturnBuzz() {
+        $input = 5;
+        $expectedResult = 'Buzz';
+        $this->assertEquals($expectedResult, self::$kata->fizzBuzz($input));
+    }
+
 }
